@@ -7,7 +7,8 @@ let win;
 function createWindow() {
     win = new BrowserWindow({
         width:700,
-        height: 500,
+        height: 550,
+        titleBarStyle: 'hiddenInset',
         icon: __dirname + "/img/favicon.png"
     });
     win.loadURL(url.format({
@@ -15,7 +16,7 @@ function createWindow() {
         protocol: 'file:',
         slashes: true
     }));
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
 
     win.on('closed', () => {
         win = null;
