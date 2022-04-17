@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopRussianWar</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="modal"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+      >
+        <div class=" modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Тривога</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Участь в цьому додатка не є законною. Натисніть «Продовжити»,
+                якщо ви хочете підтримати Україну у знищенні російських та
+                білоруських пропагандистських новин, урядових, військових та
+                банківських сайтів.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="window.location.href='https://www.google.com'"
+              >
+                Залишити
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="exampleModalLabel"
+                onclick="togglePause(); myModal.toggle();"
+              >
+                Продовжити
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headelist">
+        <div class="header__links_left">
+          <ul class="header__links">
+            <li class="header__link link help1 text-decoration-none text-reset">
+                <a class="text-decoration-none text-reset" href="https://t.me/VolunteerCountry">Ви волонтер?</a>
+                </li>
+            <li class="header__link help2">
+                <a class="text-decoration-none text-reset" href="https://t.me/VolunteersHotlineBot">Потребуете допомоги?</a>
+                </li>
+            <li class="header__link help3">
+                <a class="text-decoration-none text-reset" href="https://savelife.in.ua/donate/">Допомога ЗСУ</a>
+                </li>
+          </ul>
+        </div>
+
+        <div class="header__links_right">
+          <ul class="header__links">
+            <li class="header__link help4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </li>
+            <li class="header__link help5">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+              <svg
+                width="24px"
+                height="24px"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xml:space="preserve"
+                xmlns:serif="http://www.serif.com/"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 1.41421;
+                "
+              >
+                <path
+                  id="telegram-4"
+                  d="M12,0c-6.626,0 -12,5.372 -12,12c0,6.627 5.374,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.628 -5.373,-12 -12,-12Zm3.224,17.871c0.188,0.133 0.43,0.166 0.646,0.085c0.215,-0.082 0.374,-0.267 0.422,-0.491c0.507,-2.382 1.737,-8.412 2.198,-10.578c0.035,-0.164 -0.023,-0.334 -0.151,-0.443c-0.129,-0.109 -0.307,-0.14 -0.465,-0.082c-2.446,0.906 -9.979,3.732 -13.058,4.871c-0.195,0.073 -0.322,0.26 -0.316,0.467c0.007,0.206 0.146,0.385 0.346,0.445c1.381,0.413 3.193,0.988 3.193,0.988c0,0 0.847,2.558 1.288,3.858c0.056,0.164 0.184,0.292 0.352,0.336c0.169,0.044 0.348,-0.002 0.474,-0.121c0.709,-0.669 1.805,-1.704 1.805,-1.704c0,0 2.084,1.527 3.266,2.369Zm-6.423,-5.062l0.98,3.231l0.218,-2.046c0,0 3.783,-3.413 5.941,-5.358c0.063,-0.057 0.071,-0.153 0.019,-0.22c-0.052,-0.067 -0.148,-0.083 -0.219,-0.037c-2.5,1.596 -6.939,4.43 -6.939,4.43Z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo">
+        <img class="logo__gerb" src="./img/logo.png" alt="" />
+      </div>
+      <div class="text">Сайт протидії російської агресії</div>
+      <h2 class="description">
+          Сайт створений для ознайомлення та допомоги украінцям, не вимикайте сайт, будь ласка, відкрийте цю сторінку на вашому пристрої. Це закидає російські пропагандистські сайти запитами та створить величезне навантаження на їхню інфраструктуру.
+      </h2>
+    </header>
+    <div id="mouse-scroll" class="ng-scope" style="display: block">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div style="padding-left: 1px">
+        <span class="unu"></span> <span class="doi"></span>
+        <span class="trei"></span>
+      </div>
+
+    </div>
+    <div class="desc text-center">
+      <h3>Атака на росіські сайти</h3>
+      <p>
+        Нижче відправляються GET запроси які потрібні для того щоб
+        дестабілізувати російські новини, та військові баківські сайти
+      </p>
+
+      <p>Кількість GET запросів: <span id="totalerrors">0</span></p>
+      <p>Кількість помилок:<span id="totalrequests">0</span></p>
+      <button type="button" class="btn btn-primary" onclick="togglePause();">
+        Пауза
+      </button>
+    </div>
+
+    <div id="stats" class="container">
+      <div class="row"></div>
+    </div>
+
+    <p class="footer">Руський воєнний корабель - іди нах*й</p>
+  </body>
+  <script src="./script/script.js"></script>
+</html>
