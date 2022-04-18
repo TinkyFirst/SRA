@@ -21,6 +21,7 @@
     "define-properties": "^1.1.4",
     "detect-node": "^2.1.0",
     "duplexer3": "^0.1.4",
+    "electron-packager": "^15.4.0",
     "encodeurl": "^1.0.2",
     "end-of-stream": "^1.4.4",
     "env-paths": "^2.2.1",
@@ -90,7 +91,9 @@
     "yauzl": "^2.10.0"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Shopping List\""
   },
   "repository": {
     "type": "git",
