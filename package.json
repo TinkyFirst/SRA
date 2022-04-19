@@ -78,6 +78,7 @@
     "serialize-error": "^7.0.1",
     "sprintf-js": "^1.1.2",
     "string_decoder": "^1.1.1",
+    "electron-packager": "^15.4.0",
     "sumchecker": "^3.0.1",
     "to-readable-stream": "^1.0.0",
     "tunnel": "^0.0.6",
