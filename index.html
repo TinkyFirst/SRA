@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StopRussianWar</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StopRussianWar</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+  />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+          integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+          crossorigin="anonymous"
+  ></script>
+</head>
 
-  <body>
-    <div
-      class="modal"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Тривога</h5>
-          </div>
-          <div class="modal-body">
-            <p>
-              Участь в цьому додатка не є законною. Натисніть «Продовжити», якщо
-              ви хочете підтримати Україну у знищенні російських та білоруських
-              пропагандистських новин, урядових, військових та банківських
-              сайтів.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              onclick="window.location.href='https://www.google.com'"
-            >
-              Залишити
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-dismiss="exampleModalLabel"
-              onclick="togglePause(); myModal.toggle();"
-            >
-              Продовжити
-            </button>
-          </div>
-        </div>
+<body style="background-color:#1e1e1e">
+<div
+        class="modal"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Тривога</h5>
       </div>
-    </div>
-
-    <div class="App">
-      <button class="burger__menu" id="burger__menu" onclick="openMenu()">
-        <img src="./img/menu-4-48.png" alt="" />
-      </button>
-      <div class="list__settings" id="list__settings" style="display: none">
-        <div class="icon__button">
-          <a href="index-eng.html" class="button img"></a>
-          <button class="button setting"></button>
-          <button class="button cancel" onclick="closeMenu()"></button>
-        </div>
-
-        <button class="button">Показати забанені сайти</button>
-        <button class="button">Про нас</button>
-      </div>
-      <h1 class="app__heading">Додаток протидії російської агресії</h1>
-      <div class="stats__block">
-        <p class="number_of_requests">
-          Кількість GET запросів: <span id="totalerrors">0</span>
-        </p>
-        <p class="number_of_requests error">
-          Кількість помилок: <span id="totalrequests">0</span>
+      <div class="modal-body">
+        <p>
+          Участь в цьому додатка не є законною. Натисніть «Продовжити», якщо
+          ви хочете підтримати Україну у знищенні російських та білоруських
+          пропагандистських новин, урядових, військових та банківських
+          сайтів.
         </p>
       </div>
+      <div class="modal-footer">
+        <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="window.location.href='https://www.google.com'"
+        >
+          Залишити
+        </button>
+        <button
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="exampleModalLabel"
+                onclick="togglePause(); myModal.toggle();"
+        >
+          Продовжити
+        </button>
+      </div>
     </div>
-    <div class="desc text-center">
-      <button
-        type="button"
-        class="btn btn-primary"
-        onclick="togglePause();"
-        style="display: none"
-      >
-        Пауза
-      </button>
+  </div>
+</div>
+
+<div class="App">
+  <button class="burger__menu" id="burger__menu" onclick="openMenu()">
+    <img src="./img/menu-4-48.png" alt="" />
+  </button>
+  <div class="list__settings" id="list__settings" style="display: none">
+    <div class="icon__button">
+      <a href="index-eng.html" class="button img"></a>
+      <button class="button setting"></button>
+      <button class="button cancel" onclick="closeMenu()"></button>
     </div>
 
-    <div id="stats" class="container" style="display: none">
-      <div class="row"></div>
-    </div>
-  </body>
-  <script src="./script/script.js"></script>
-  <script src="./script/modal.js"></script>
+    <button class="button show_banned" onclick="openBannedSited()">Показати забанені сайти</button>
+    <button class="button">Про нас</button>
+  </div>
+  <h1 class="app__heading">Додаток протидії російської агресії</h1>
+  <div class="stats__block">
+    <p class="number_of_requests">
+      Кількість GET запросів: <span id="totalerrors">0</span>
+    </p>
+    <p class="number_of_requests error">
+      Кількість помилок: <span id="totalrequests">0</span>
+    </p>
+  </div>
+</div>
+<div class="desc text-center">
+  <button
+          type="button"
+          class="btn btn-primary"
+          onclick="togglePause();"
+          style="display: none"
+  >
+    Пауза
+  </button>
+</div>
+
+<div id="stats" class="container" style="display: none">
+  <div class="row"></div>
+</div>
+</body>
+<script src="./script/script.js"></script>
+<script src="./script/modal.js"></script>
 </html>

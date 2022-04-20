@@ -9,7 +9,8 @@ function createWindow() {
         width:700,
         height: 550,
         titleBarStyle: 'hiddenInset',
-        icon: __dirname + "/img/favicon.png"
+        icon: __dirname + "/img/favicon.png",
+
     });
     win.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),

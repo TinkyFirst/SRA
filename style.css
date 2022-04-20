@@ -1,17 +1,21 @@
 @font-face {
-  font-family: E-Ukraine;
-  src: url("./fonts/e-Ukraine-Medium.otf") format("opentype");
+    font-family: E-Ukraine;
+    src: url("./fonts/e-Ukraine-Medium.otf") format("opentype");
 }
 
 @font-face {
-  font-family: E-Ukraine;
-  font-weight: normal;
-  src: url("./fonts/e-Ukraine-Medium.otf") format("opentype");
+    font-family: E-Ukraine;
+    font-weight: normal;
+    src: url("./fonts/e-Ukraine-Medium.otf") format("opentype");
 }
 html {
-  font-size: 10px;
-  background-color: #1e1e1e;
+    font-size: 10px;
+    background-color: #1e1e1e;
 }
+html{
+    background-color: #1e1e1e;
+}
+
 .App{
     font-size: 1.6rem;
     font-family: E-Ukraine;
@@ -21,7 +25,19 @@ html {
     color: white;
 }
 .App{
-  background-color: #1e1e1e;
+    background-color: #1e1e1e;
+}
+h4{
+    color:white;
+}
+td{
+    color:white;
+}
+.requests{
+    color:white;
+}
+.container{
+    background-color: #1e1e1e;
 }
 .burger__menu{
     position: absolute;
@@ -52,64 +68,64 @@ html {
     padding-bottom: 85px;
 }
 .stats{
-display: none;
+    display: none;
 }
 .img{
-  background-image: url(./img/uaukraineflag_111966.png);
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  border:none;
-  background-color: transparent;
-  
+    background-image: url(./img/uaukraineflag_111966.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    border:none;
+    background-color: transparent;
+
 }
 .img-ru{
-  background-image: url(./img/rurussiaflag_111751.png);
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  border:none;
-  background-color: transparent;
+    background-image: url(./img/rurussiaflag_111751.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    border:none;
+    background-color: transparent;
 }
 .img-eng{
-  background-image: url(./img/GB-United-Kingdom-Flag-icon.png);
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  border:none;
-  background-color: transparent;
+    background-image: url(./img/GB-United-Kingdom-Flag-icon.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    border:none;
+    background-color: transparent;
 }
 .setting{
-  background-image: url(./img/white-settings-icon-0.png);
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  border:none;
-  background-color: transparent;
-  
+    background-image: url(./img/white-settings-icon-0.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    border:none;
+    background-color: transparent;
+
 }
 .cancel{
-  background-image: url(./img/icon.png);
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: cover ;
-  border:none;
-  background-color: transparent;
-  margin-bottom: 30px;
+    background-image: url(./img/icon.png);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    border:none;
+    background-color: transparent;
+    margin-bottom: 30px;
 }
 .button{
-  border:none;
-  color: white;
-  background-color: transparent;
-  margin-bottom: 10;
+    border:none;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 10px;
 }
 .icon__button{
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
 }

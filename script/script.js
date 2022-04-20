@@ -252,7 +252,6 @@ async function sleep(ms) {
 async function flood(n) {
   const url = urls[n];
   const target = targets[url];
-
   while (attack) {
       if (queue.length > CONCURRENCY_LIMIT) {
           await queue.shift();
