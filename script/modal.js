@@ -6,6 +6,10 @@ let bannedSitesBtn = document.querySelector('.show_banned');
 let bannedSitesContent = document.querySelector('.container');
 let appHeading = document.querySelector('.app__heading')
 let statsBlock = document.querySelector('.stats__block')
+let settingsBlock = document.querySelector('.settigs_block')
+let settingButton = document.querySelector('.svg_setting')
+let downloadBlock = document.querySelector('.download__block')
+let downloadButton = document.querySelector('.download')
 
 const openMenu = () => {
     burgerMenu.style.display = "none";
@@ -25,3 +29,22 @@ const openBannedSited = () => {
     appHeading.style.display = "none";
     bannedSitesContent.style.display = "block";
 }
+const openSettings = () => {
+    statsBlock.style.display = "none";
+    appHeading.style.display = "none";
+    bannedSitesContent.style.display = "none";
+    settingsBlock.style.display = "block";
+    listMenu.style.display = "none";
+    burgerMenu.style.display = 'block'
+}
+const openDownload = () => {
+    statsBlock.style.display = "none";
+    appHeading.style.display = "none";
+    bannedSitesContent.style.display = "none";
+    settingsBlock.style.display = "none";
+    downloadBlock.style.display = "block"
+    listMenu.style.display = "none";
+    burgerMenu.style.display = 'block'
+}
+settingButton.addEventListener('click', openSettings)
+downloadButton.addEventListener('click', openDownload)

@@ -8,124 +8,230 @@
     font-weight: normal;
     src: url("./fonts/e-Ukraine-Medium.otf") format("opentype");
 }
+
 html {
     font-size: 10px;
-    background-color: #1e1e1e;
-}
-html{
-    background-color: #1e1e1e;
 }
 
-.App{
+html {
+    /* background-color: #1e1e1e; */
+    background-color: #f7f2ee;
+}
+
+body {
+    background-color: #f7f2ee;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.App {
     font-size: 1.6rem;
     font-family: E-Ukraine;
     padding: 0;
     margin: 0;
-    background-color: #1e1e1e;
+    /* background-color: #1e1e1e; */
+    background-color: #f7f2ee;
     color: white;
 }
-.App{
-    background-color: #1e1e1e;
+
+.download__image {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
 }
-h4{
-    color:white;
+
+h4 {
+    color: #3d2922
 }
-td{
-    color:white;
+.download__heading{
+    color: #3d2922;
+    text-align: center;
+    padding-top: 115px;
 }
-.requests{
-    color:white;
+.settigs_block {
+    display: none;
 }
-.container{
-    background-color: #1e1e1e;
+
+.settings_heading {
+    margin-top: 200px;
+    text-align: center;
+    color: #3d2922;
 }
-.burger__menu{
+
+.settigs_block {
+    background-color: #f7f2ee;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.settings_heading {
+    margin-bottom: 50px;
+}
+
+.input__radio {
+    display: flex;
+    align-items: center;
+}
+
+.input__range {
+    display: flex;
+    align-items: center;
+}
+
+.input__name {
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+.checkbox {}
+
+.range {
+    width: 150px;
+    margin-left: 140px;
+    margin-left: 70px;
+}
+
+td {
+    color: #3d2922
+}
+
+.requests {
+    color: #3d2922
+}
+
+.container {
+    background-color: #f7f2ee;
+}
+
+.burger__menu {
     position: absolute;
     top: 15px;
     right: 15px;
     border: none;
     background-color: transparent;
 }
-.list__settings{
+
+.list__settings {
     display: flex;
     flex-direction: column;
     width: 190px;
-    height:400px;
+    height: 400px;
     position: absolute;
     top: 20px;
     right: 20px;
 }
-.app__heading{
+
+.app__heading {
     margin-top: 200px;
     text-align: center;
+    color: #3d2922
 }
-.stats__block{
+
+.stats__block {
     display: flex;
     justify-content: space-between;
     width: 600px;
     margin: 0 auto;
     padding-top: 150px;
     padding-bottom: 85px;
+    color: #3d2922;
 }
-.stats{
+
+.stats {
     display: none;
 }
-.img{
+
+.img {
     background-image: url(./img/uaukraineflag_111966.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
-    background-size: cover ;
-    border:none;
+    background-size: cover;
+    border: none;
     background-color: transparent;
 
 }
-.img-ru{
+
+.img-ru {
     background-image: url(./img/rurussiaflag_111751.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
-    background-size: cover ;
-    border:none;
+    background-size: cover;
+    border: none;
     background-color: transparent;
 }
-.img-eng{
+
+.img-eng {
     background-image: url(./img/GB-United-Kingdom-Flag-icon.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
-    background-size: cover ;
-    border:none;
+    background-size: cover;
+    border: none;
     background-color: transparent;
 }
-.setting{
-    background-image: url(./img/white-settings-icon-0.png);
+
+.setting {
     width: 30px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-size: cover ;
-    border:none;
-    background-color: transparent;
+    border: none;
+
 
 }
-.cancel{
-    background-image: url(./img/icon.png);
+
+.svg_close {
     width: 30px;
     height: 30px;
-    background-repeat: no-repeat;
-    background-size: cover ;
-    border:none;
+}
+
+.svg_setting {
+    width: 30px;
+    height: 30px;
+}
+
+.cancel {
+    width: 30px;
+    height: 30px;
+    border: none;
     background-color: transparent;
     margin-bottom: 30px;
 }
-.button{
-    border:none;
-    color: white;
+
+.button {
+    border: none;
+    color: #3d2922;
     background-color: transparent;
     margin-bottom: 10px;
 }
-.icon__button{
+
+.download__block {
+    display: none;
+}
+
+.icon__button {
     display: flex;
     justify-content: space-between;
 
+}
+
+.burger_svg {
+    fill: #3d2922;
+}
+
+p {
+    padding-bottom: 0px;
+}
+
+.change__theme {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    background: #3d2922;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    color: #f7f2ee;
 }
