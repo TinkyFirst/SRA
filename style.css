@@ -35,7 +35,9 @@ p {
     background-color: #f7f2ee;
     color: white;
 }
-
+.download__block{
+    display: none;
+}
 .download__image {
     width: 300px;
     margin: 0 auto;
