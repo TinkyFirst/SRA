@@ -29,3 +29,19 @@ app.on('ready', createWindow);
 app.on('window-all-closed', () => {
     app.quit();
 });
+
+
+var AutoLaunch = require('auto-launch');
+var autoLauncher = new AutoLaunch({
+    name: "MyApp"
+});
+// Checking if autoLaunch is enabled, if not then enabling it.
+autoLauncher.isEnabled().then(function(isEnabled) {
+  if (isEnabled) return;
+   autoLauncher.enable();
+}).catch(function (err) {
+  throw err;
+});
+
+
+ 

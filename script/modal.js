@@ -103,13 +103,9 @@ themeButton.addEventListener('click', function () {
   cancelSvg.classList.toggle("svg_black")
   modalBlock.classList.toggle("black")
 
-  // Допустим, тема светлая
   let theme = "light";
-  // Если <body> содержит класс .dark-theme…
   if (document.body.classList.contains("black")) {
-    // …тогда делаем тему тёмной
     theme = "dark";
   }
-  // После чего сохраняем выбор в localStorage
   localStorage.setItem("theme", theme);
 })
