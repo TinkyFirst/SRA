@@ -237,3 +237,35 @@ p {
     padding: 10px 40px;
     color: #f7f2ee;
 }
+
+.body_black{
+    background-color: #1e1e1e;
+}
+.black{
+    color:#f7f2ee !important;
+    background-color: #1e1e1e !important;
+    fill:#f7f2ee;
+}
+.app_black{
+    color:#f7f2ee;
+    background-color: #1e1e1e;
+}
+.button_black{
+    background: #f7f2ee;
+    color:#1e1e1e;
+}
+.settigs_block{
+    display: none;
+}
+.svg_setting{
+    fill:#1e1e1e;
+}
+.svg_black{
+    fill:#f7f2ee;
+}
+.svg_close{
+    fill:#1e1e1e; 
+}
+.svg_black{
+    fill:#f7f2ee;
+}
