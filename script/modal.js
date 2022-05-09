@@ -69,7 +69,7 @@ downloadButton.addEventListener('click', openDownload)
 if (currentTheme == "dark") {
   document.body.classList.add("black");
   htmlPage.classList.add("black");
-  displayContent.classList.add("black");
+  displayContent.classList.add("app_black");
   settingsBlock.classList.add("black");
   settingsHeading.classList.add("black");
   themeButton.classList.add("button_black")
