@@ -21,10 +21,12 @@ let containerStats = document.querySelector('.container')
 let cancelSvg = document.querySelector('.svg_close')
 let downloadHeading = document.querySelector('.download__heading')
 let modalBlock = document.querySelector('.modal-content')
+let requests = document.querySelectorAll('.requests')
+let h4 = document.querySelectorAll('h4');
+let td = document.querySelectorAll('td')
+let tdNew = ''
 
 const currentTheme = localStorage.getItem("theme");
-
-
 const openMenu = () => {
   burgerMenu.style.display = "none";
   listMenu.style.display = "flex";
@@ -37,12 +39,17 @@ const closeMenu = () => {
   statsBlock.style.display = "flex";
   appHeading.style.display = "block";
   settingsBlock.style.display = "none";
+  downloadBlock.style.display = "none";
 
 }
 const openBannedSited = () => {
   statsBlock.style.display = "none";
   appHeading.style.display = "none";
   bannedSitesContent.style.display = "block";
+  downloadBlock.style.display = "none";
+  settingsBlock.style.display = "none";
+  listMenu.style.display = "none";
+  burgerMenu.style.display = 'block'
 }
 const openSettings = () => {
   statsBlock.style.display = "none";
@@ -102,6 +109,16 @@ themeButton.addEventListener('click', function () {
   settingButton.classList.toggle("svg_black")
   cancelSvg.classList.toggle("svg_black")
   modalBlock.classList.toggle("black")
+  // td.forEach(() => {
+  //   classList.toggle("white")
+  // });
+  // h4.forEach(() => {
+  //   classList.toggle("white")
+  // });
+  // requests.forEach(() => {
+  //   classList.toggle("white")
+  // });
+
 
   let theme = "light";
   if (document.body.classList.contains("black")) {
@@ -109,3 +126,4 @@ themeButton.addEventListener('click', function () {
   }
   localStorage.setItem("theme", theme);
 })
+

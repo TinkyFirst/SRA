@@ -9,7 +9,7 @@ function createWindow() {
         width:700,
         height: 550,
         titleBarStyle: 'hiddenInset',
-        icon: __dirname + "/img/favicon.png",
+        icon: __dirname + "/img//",
 
     });
     win.loadURL(url.format({
@@ -31,17 +31,18 @@ app.on('window-all-closed', () => {
 });
 
 
-var AutoLaunch = require('auto-launch');
-var autoLauncher = new AutoLaunch({
-    name: "MyApp"
-});
-// Checking if autoLaunch is enabled, if not then enabling it.
-autoLauncher.isEnabled().then(function(isEnabled) {
-  if (isEnabled) return;
-   autoLauncher.enable();
-}).catch(function (err) {
-  throw err;
-});
+// var AutoLaunch = require('auto-launch');
+// var autoLauncher = new AutoLaunch({
+//     name: "sra",
+//     path: '/Applications/sra.app'
+// });
+// // Checking if autoLaunch is enabled, if not then enabling it.
+// autoLauncher.isEnabled().then(function(isEnabled) {
+//   if (isEnabled) return;
+//    autoLauncher.enable();
+// }).catch(function (err) {
+//   throw err;
+// });
 
 
  

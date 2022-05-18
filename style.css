@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background-color: #f7f2ee;
+    background-color: #f7f2ee !important;
 }
 
 p {
@@ -146,7 +146,7 @@ td {
 }
 
 .img {
-    background-image: url(./img/uaukraineflag_111966.png);
+    background-image: url(/img/uaukraineflag_111966.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ td {
 }
 
 .img-ru {
-    background-image: url(./img/rurussiaflag_111751.png);
+    background-image: url(/img/rurussiaflag_111751.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ td {
 }
 
 .img-eng {
-    background-image: url(./img/GB-United-Kingdom-Flag-icon.png);
+    background-image: url(/img/GB-United-Kingdom-Flag-icon.png);
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
